@@ -1,0 +1,81 @@
+section.hero {
+  background: linear-gradient(to bottom, #e2ebf0, #d4dde3);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-content {
+  text-align: center;
+}
+.hero-content h1 {
+  font-family: var(--secondary);
+  margin: 2em 0 1em 0;
+  font-size: 2em;
+  font-weight: 500;
+  text-align: center;
+}
+.hero-content p {
+  font-family: var(--font);
+  text-align: center;
+  font-weight: 100;
+  margin: 1em 0;
+  font-size: 1.2em;
+}
+.hero img {
+  display: none;
+}
+.hero-content input {
+  padding: 0.8em 1.5em;
+  background: transparent;
+  font-family: var(--fontSec);
+  border: none;
+  outline: 1px solid var(--primary);
+  color: var(--primary);
+  cursor: pointer;
+  font-weight: 100;
+  transition: all 0.3s ease-in-out;
+}
+.hero-content input:hover {
+  background: var(--primary);
+  color: white;
+}
+
+@media screen and (min-width: 550px) {
+  .hero-content h1 {
+    font-size: 3em;
+  }
+  .hero-content p {
+    font-size: 1.5em;
+  }
+  .hero-content input {
+    font-size: 1.1em;
+
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1065px) {
+  .hero img {
+    display: inline;
+    position: relative;
+    top: 5em;
+    width: 716px;
+    height: 515px;
+    transform: rotate(-20deg);
+    -webkit-user-drag: none;
+    transition: transform 10s ease-in-out;
+  }
+  .hero-content h1 {
+    font-size: 4em;
+  }
+  .hero-content p {
+    font-size: 2em;
+  }
+  .hero-content input {
+    font-size: 1.3em;
+    margin: 0;
+  }
+  .hero:hover img {
+    transform: rotate(10deg);
+  }
+}

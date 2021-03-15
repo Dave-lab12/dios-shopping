@@ -1,0 +1,42 @@
+.popular-item-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  position: relative;
+}
+.popular-item-card {
+  text-align: center;
+  margin: 2em;
+  position: relative;
+}
+.popular-item-card h3 {
+  font-family: var(--font);
+  font-weight: 300;
+  text-transform: capitalize;
+  margin: 1.5em;
+  font-size: 1.5em;
+}
+.popular-item-card p {
+  font-family: var(--font);
+  font-weight: 300;
+  text-transform: capitalize;
+  margin: 1em;
+  font-size: 1.5em;
+  color: #4d4d4d;
+}
+
+@media screen and (min-width: 768px) {
+  .popular-items h1 {
+    font-size: 1.8em;
+    font-weight: 400;
+  }
+  .popular-item-card img {
+    width: 287px;
+    height: 227px;
+  }
+  .popular-item-container {
+    text-align: center;
+    margin-left: 1em;
+    width: 95%;
+  }
+}
