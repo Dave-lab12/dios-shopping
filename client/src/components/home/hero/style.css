@@ -75,7 +75,5 @@ section.hero {
     font-size: 1.3em;
     margin: 0;
   }
-  .hero:hover img {
-    transform: rotate(10deg);
-  }
+
 }

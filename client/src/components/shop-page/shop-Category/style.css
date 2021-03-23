@@ -1,0 +1,58 @@
+.cat-container {
+  height: auto;
+  max-width: 1280px;
+  margin: 0 auto;
+  font-size: 1rem;
+  position: relative;
+}
+.cat-container .items-cont {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.cat-container .items-cont li {
+  flex: auto;
+  min-width: 20%;
+  margin: 0.5rem;
+  padding: 0 1.5rem;
+  position: relative;
+  color: #fff;
+  border-radius: 0.1rem;
+  background: linear-gradient(45deg, #547999, #1da1f2);
+  box-shadow: 0px 4px 10px rgba(19, 127, 212, 0.5);
+  transition: all 0.3s ease;
+}
+.cat-container .items-cont li.submenu:after {
+  content: " ";
+  font-size: 1.5rem;
+  display: inline-block;
+  position: absolute;
+  right: 1rem;
+  top: 0.5rem;
+  color: #fff;
+  transition: 0.6s ease-out;
+}
+.delete-svg {
+  font-size: 1.5em;
+  color: var(--primary);
+  cursor: pointer;
+}
+.cat-container .items-cont li:hover {
+  background: linear-gradient(45deg, #1da1f2, #547999);
+  box-shadow: 0px 4px 10px rgba(19, 127, 212, 0.1);
+}
+.cat-container .items-cont li a {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  color: #fff;
+}

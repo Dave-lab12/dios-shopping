@@ -1,0 +1,86 @@
+section.login {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 5em;
+  }
+  
+  .left-box {
+    display: none;
+  }
+  .right-box {
+    width: 100%;
+    margin: 2em;
+
+  }
+  .login h1 {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.5em;
+    line-height: 2em;
+    font-family: var(--font);
+    font-weight: 300;
+  }
+  
+  .username,
+  .password {
+    display: block;
+    width: 100%;
+    margin: 1em 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid var(--primary);
+    outline: none;
+    font-size: 1em;
+    padding: 0.6em 0;
+  }
+  .btn {
+    border: none;
+    outline: 1px solid var(--primary);
+    padding: 1.2em;
+    font-size: 1em;
+    text-transform: capitalize;
+    width: 100%;
+    background: transparent;
+    margin: 1em 0;
+    transition: all 0.3s ease-in-out;
+
+  }
+  .btn:hover {
+    background: var(--primary);
+    border-radius: 2px;
+    color: white;
+    font-family: var(--font);
+  }
+  @media screen and (min-width: 847px) {
+    .right-box {
+      width: 40%;
+      max-width: 450px;
+      margin: 5em;
+    }
+    .left-box {
+      display: inline;
+      width: 40%;
+      max-width: 576px;
+      background: linear-gradient(to bottom, #e0e9ee, #d0dae0);
+      outline: 1px solid white;
+      text-align: center;
+    }
+    .clear {
+      display: none;
+    }
+    .left-box h1 {
+      padding-top: 2.5em;
+      font-size: 3em;
+    }
+    .left-box p {
+      padding: 4em;
+      font-size: 1.5em;
+    }
+    .left-box input {
+      padding: 1em;
+      margin: 2em;
+      width: 70%;
+    }
+  }

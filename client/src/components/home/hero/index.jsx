@@ -10,6 +10,7 @@ function Hero() {
         <input type="button" value="Browse Now" />
       </div>
       <img src={running} alt="running shoes"  />
+      
     </section>
     )
 }

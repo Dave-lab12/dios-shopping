@@ -74,7 +74,7 @@ nav h1 {
   .nav-items,
   .nav-fav,
   .nav-search,
-  .nav-icons {
+  .nav-icons,.nav-icons p {
     display: inline;
   }
   .nav-items {
@@ -98,6 +98,12 @@ nav h1 {
   }
   .nav-burger {
     display: none;
+  }
+  .nav-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: capitalize;
   }
   .nav-fav,
   .nav-search {

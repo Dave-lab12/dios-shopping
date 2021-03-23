@@ -73,6 +73,7 @@ a {
 }
 .footer-copyright {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin-left: 4em;
 }
@@ -86,17 +87,16 @@ a {
   align-items: center;
 }
 .footer-copy-images svg {
-  width: 10%;
-  height: 20%;
-  margin: 0 1.2em;
+  font-size: 1.5em;
+  margin: 0 .5em;
   cursor: pointer;
+  color: var(--primary);
 }
 
 @media screen and (min-width: 768px) {
   .warning-text h2 {
     padding-top: 2em;
     text-transform: capitalize;
-
     font-size: 1.5em;
   }
   .warning-text p {
@@ -107,8 +107,5 @@ a {
   .footer-links {
     margin: 0 2em;
   }
-  .footer-copy-images {
-    width: 30%;
-    height: 30%;
-  }
+ 
 }
