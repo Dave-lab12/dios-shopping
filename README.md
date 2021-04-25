@@ -1,1 +1,1 @@
-https://dawit-mekonnen.netlify.app
+https://dios-shopping.netlify.app
